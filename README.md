@@ -33,4 +33,4 @@ Available options:
 
 - The compilation of `ghcitohtml.hs` requires the libraries `optparse-applicative` and `MissingH`.
 
-- As it is given, it only works on Linux. For Windows, change the occurences of `"/tmp/..." to another temporary directory.
+- As it is given, it only works on Linux. For Windows, change the occurences of `"/tmp/..."` to another temporary directory.
