@@ -34,3 +34,11 @@ Available options:
 - The compilation of `ghcitohtml.hs` requires the libraries `optparse-applicative` and `MissingH`.
 
 - As it is given, it only works on Linux. For Windows, change the occurences of `"/tmp/..."` to another temporary directory.
+
+## Rendering of the examples 
+
+- [Example 1](http://htmlpreview.github.io/?https://github.com/stla/ghcitohtml/blob/master/test_multiline_noOutputs.html) (no outputs)
+
+- [Example 2](http://htmlpreview.github.io/?https://github.com/stla/ghcitohtml/blob/master/test_monoline.html) (single lines of outputs)
+
+- [Example 3](http://htmlpreview.github.io/?https://github.com/stla/ghcitohtml/blob/master/test_multiline.html) (multiple lines of outputs)
