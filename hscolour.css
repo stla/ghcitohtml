@@ -1,0 +1,65 @@
+.hs-keyglyph, .hs-layout {
+	color: #ff9358; 
+	font-weight: bold;
+}
+.hs-keyword {
+	color: #00FF00; 
+	font-weight: bold;
+} 
+.hs-comment, .hs-comment a {
+	color: #0066ff; 
+	font-weight: bold; 
+	font-style: italic;
+}
+.hs-str, .hs-chr {
+	color: #ff2200;
+}
+.hs-num {
+	color: #f0dfaf;
+}
+.hs-conid {
+	color: yellow;
+}
+.hs-conop {
+	color: seaShell; 
+	font-weight:bold;
+}
+.hs-varid, .hs-varop, .hs-cpp, .hs-sel, .hs-definition {
+	color: #efef8f; 
+}
+
+.output {
+	font-style: italic; 
+	color: gray;
+}
+.prompt {
+	color: orange; 
+	font-weight:bold;
+}
+.m {
+	color: #ff9358; 
+	font-weight:bold;
+}
+.command {
+	color: seaShell; 
+	font-style: italic;
+}
+
+pre.scriptHaskell, code.scriptHaskell {
+	background-color: #303030;
+	color: #efef8f;
+	display: block;
+	padding: 2px;
+	margin: 0 0 10px;
+}
+pre.scriptHaskell {
+	border: 1px solid #303030;
+	border-radius: 13px;
+}
+code.scriptHaskell {
+	white-space: pre;
+	font-family: monospace;
+}
+div.sourceCode { 
+	overflow-x: auto; 
+}
