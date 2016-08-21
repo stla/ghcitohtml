@@ -1,6 +1,8 @@
 # ghcitohtml
 Convert a Haskell script to html, including the outputs
 
+This tool depends on the executable file `HsColour` provided by the [hscolour package](https://hackage.haskell.org/package/hscolour).
+
 ## Usage 
 
 ```
