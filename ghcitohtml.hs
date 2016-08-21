@@ -27,7 +27,7 @@ lineBelongsToMultiBlock i list = if isJust firstCBafter
                                      where firstOBbefore = firstOpeningBracketBefore i list
                                            firstCBafter = firstClosingBracketAfter i list
 
-prefixesToDetect = ["import ", "let ", "data ", "where ", "--", "{-#", ":s", ":l", ":m", ",", "<", "{", "}", "$"]
+prefixesToDetect = ["import ", "let ", "data ", "where ", "--", "{-#", ":s", ":l", ":m", ",", "<", "{", "}", "$", ")"]
 
 beginByKeyWord :: String -> [String] -> Bool
 beginByKeyWord string keywords = foldr (||) False $ map (\x -> SU.startswith x string) (keywords ++ prefixesToDetect)
