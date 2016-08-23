@@ -1,3 +1,5 @@
+
+
 -- define a new type: 
 data Point = Point Float Float deriving (Show)
 -- variable of type Point:
