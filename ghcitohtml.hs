@@ -27,7 +27,7 @@ lineBelongsToMultiBlock i list = if isJust firstCBafter
                                      where firstOBbefore = firstOpeningBracketBefore i list
                                            firstCBafter = firstClosingBracketAfter i list
 
-prefixesToDetect = ["import ", "let ", "data ", "where ", "--", "{-#", ":s", ":l", ":m", ",", "<", "{", "}", "$", ")"]
+prefixesToDetect = ["import ", "let ", "data ", "where ", "--", "{-#", ":s", ":u", ":l", ":m", ",", "<", "{", "}", "$", ")"]
 
 beginByKeyWord :: String -> [String] -> Bool
 beginByKeyWord string keywords = foldr (||) False $ map (\x -> SU.startswith x string) (keywords ++ prefixesToDetect)
@@ -101,7 +101,8 @@ insertAtIndices (i:is) element list | is == [] = x ++ list2
                                               (list1,list2) = splitAt i list
 
 insertAtIndices2 :: [Int] -> [a] -> [a] -> [a]
-insertAtIndices2 indices elements list | is == [] = x ++ list2
+insertAtIndices2 indices elements list | indices == [] = list
+                                       | is == [] = x ++ list2
                                        | otherwise = x ++ (insertAtIndices2 (map (\j -> j-(length(list1))) is) elements2 list2)  
                                           where x = insertAt i element1 list1
                                                 (list1,list2) = splitAt i list
