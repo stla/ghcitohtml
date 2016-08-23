@@ -60,6 +60,6 @@ code.scriptHaskell {
 	white-space: pre;
 	font-family: monospace;
 }
-div.sourceCode { 
+div.sourceCode, pre.scriptHaskell { 
 	overflow-x: auto; 
 }
